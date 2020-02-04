@@ -37,7 +37,7 @@ class Internationalization {
 	 */
 	public function __construct( $textdomain, $full_lang_dir_path ) {
 		$this->textdomain = $textdomain;
-		$this->lang_dir   = $full_lang_dir_path;
+		$this->lang_dir   = trailingslashit( $full_lang_dir_path );
 	}
 
 	/**
@@ -50,7 +50,7 @@ class Internationalization {
 	 * @return bool Whether the translation has been loaded or not.
 	 */
 	public function load_translation() {
-		$mo_file = sprintf( '%s-%s.mo', $this->textdomain, determine_locale() );
+		$mo_file = sprintf( '%s%s-%s.mo', $this->lang_dir, $this->textdomain, determine_locale() );
 		return load_textdomain( $this->textdomain, $mo_file );
 	}
 
