@@ -6,6 +6,10 @@
 [![Total Downloads](https://poser.pugx.org/micropackage/internationalization/downloads)](https://packagist.org/packages/micropackage/internationalization)
 [![License](https://poser.pugx.org/micropackage/internationalization/license)](https://packagist.org/packages/micropackage/internationalization)
 
+<p align="center">
+    <img src="https://bracketspace.com/extras/micropackage/micropackage-small.png" alt="Micropackage logo"/>
+</p>
+
 ## 🧬 About Internationalization
 
 The Internationalization micropackage is an unified wrapper for both `load_plugin_textdomain` and `load_theme_textdomain` functions.
